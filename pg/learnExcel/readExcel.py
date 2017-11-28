@@ -1,7 +1,7 @@
 from mmap import mmap, ACCESS_READ
 from xlrd import open_workbook,XL_CELL_TEXT
 
-testxls = './SwClass.xlsx'
+testxls = '../SwClass.xlsx'
 
 #print(open_workbook(testxls))
 

@@ -1,0 +1,20 @@
+import re
+if __name__ == '__main__':
+    x = re.findall("(?=Last build \\()#[0-9]+", "Last build (1)")
+    print(x)
+    x2 = re.search("(?=#)[0-9]+", "Last build (#1)")
+    print(x2)
+    x3 = re.search("Finished: FAILURE", "asdsd Finished: FAILURE  sahdjas")
+    print(x3)
+    # #html match Last build (
+    # x1 = re.findall("(?=display-name\">#)[0-9]{1}", html)
+    # x = re.search("(?<=Last build \\(#)[0-9]+", html)
+    # #x2 = re.search("(?=#)[0-9]+", html)
+    # x2 = re.findall("(?=Only a)[d]+", html)
+    # b1 = re.match("Finished: FAILURE", html)
+    # print(x.group(0))
+    # print(x1)
+    # print(x2)
+    # print(b1)
+    # m = re.search('(?<=abc)def', 'abcdef')
+    # print(m.group(0))

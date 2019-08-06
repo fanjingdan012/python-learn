@@ -3,7 +3,7 @@
 # -*- coding: utf-8 -*-
 
 import requests
-from lxml import html
+# from lxml import html
 
 cookie = {}
 
@@ -18,13 +18,13 @@ for line in raw_cookies.split(';'):
 page = requests.get('https://www.douban.com/people/rosiel/',cookies=cookie)
 print(page.text)
 
-tree = html.fromstring(page.text)
+# tree = html.fromstring(page.text)
 
 
-intro_raw = tree.xpath('//span[@id="intro_display"]/text()')
+# intro_raw = tree.xpath('//span[@id="intro_display"]/text()')
 
 
-for i in intro_raw:
-    intro = i.encode('utf-8')
+# for i in intro_raw:
+#     intro = i.encode('utf-8')
 
-print(intro)
+# print(intro)
